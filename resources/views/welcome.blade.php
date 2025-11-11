@@ -80,15 +80,15 @@
                         @if (Route::has('login'))
                             @auth
                                 <li class="nav-item">
-                                    <a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a>
+                                    <a href="{{ url('/dashboard') }}" class="btn btn-sm btn-outline-danger ms-lg-3">Dashboard</a>
                                 </li>
                             @else
                                 <li class="nav-item">
-                                    <a href="{{ route('login') }}" class="nav-link">Login</a>
+                                    <a href="{{ route('login') }}" class="btn btn-sm btn-outline-danger ms-lg-3">Login</a>
                                 </li>
                                 @if (Route::has('register'))
-                                    <li class="nav-item ms-2">
-                                        <a href="{{ route('register') }}" class="btn btn-sm btn-primary">Register</a>
+                                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                                        <a href="{{ route('register') }}" class="btn btn-sm btn-danger">Join Now</a>
                                     </li>
                                 @endif
                             @endauth
