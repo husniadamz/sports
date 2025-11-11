@@ -22,10 +22,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navServices">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-outline-danger btn-sm px-3" href="{{ route('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item ms-lg-1 mt-2 mt-lg-0">
+                        <a class="btn btn-danger btn-sm px-3" href="{{ route('register') }}">Join Now</a>
                     </li>
                 </ul>
             </div>
