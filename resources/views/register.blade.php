@@ -143,21 +143,21 @@
                                     <label for="firstName" class="form-label fw-semibold">First name</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-white border-end-0"><i class="fas fa-user text-primary"></i></span>
-                                        <input type="text" class="form-control border-start-0" id="firstName" placeholder="Alex" required>
+                                        <input type="text" class="form-control border-start-0" id="firstName" placeholder="adam" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="lastName" class="form-label fw-semibold">Last name</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-white border-end-0"><i class="fas fa-user text-primary"></i></span>
-                                        <input type="text" class="form-control border-start-0" id="lastName" placeholder="Morgan" required>
+                                        <input type="text" class="form-control border-start-0" id="lastName" placeholder="husni" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="email" class="form-label fw-semibold">Email address</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-white border-end-0"><i class="fas fa-envelope text-primary"></i></span>
-                                        <input type="email" class="form-control border-start-0" id="email" placeholder="you@example.com" required>
+                                        <input type="email" class="form-control border-start-0" id="email" placeholder="adam@gmail.com" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -174,31 +174,8 @@
                                         <input type="password" class="form-control border-start-0" id="confirmPassword" placeholder="Repeat password" required>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <label for="goal" class="form-label fw-semibold">Primary fitness goal</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text bg-white border-end-0"><i class="fas fa-bullseye text-primary"></i></span>
-                                        <select id="goal" class="form-select border-start-0" required>
-                                            <option value="" selected disabled>Select your goal</option>
-                                            <option>Build strength</option>
-                                            <option>Lose weight</option>
-                                            <option>Improve endurance</option>
-                                            <option>Increase flexibility</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="experience" class="form-label fw-semibold">Experience level</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text bg-white border-end-0"><i class="fas fa-chart-line text-primary"></i></span>
-                                        <select id="experience" class="form-select border-start-0" required>
-                                            <option value="" selected disabled>Select your level</option>
-                                            <option>Beginner</option>
-                                            <option>Intermediate</option>
-                                            <option>Advanced</option>
-                                        </select>
-                                    </div>
-                                </div>
+                               
+                              
                             </div>
                             <div class="form-check mt-4">
                                 <input class="form-check-input" type="checkbox" id="terms" required>
@@ -208,23 +185,14 @@
                             </div>
                             <button type="submit" class="btn btn-register w-100 text-white mt-4">Create Account</button>
                         </form>
-                        <div class="mt-4 text-center">
-                            <p class="mb-0">Or sign up with</p>
-                            <div class="d-flex justify-content-center gap-2 mt-3">
-                                <button class="btn btn-outline-secondary rounded-pill px-4"><i class="fab fa-google text-primary me-2"></i>Google</button>
-                                <button class="btn btn-outline-secondary rounded-pill px-4"><i class="fab fa-facebook text-primary me-2"></i>Facebook</button>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="py-4">
-            <div class="container text-center">
-                <small class="text-muted">&copy; {{ date('Y') }} SportsCentre. All rights reserved.</small>
-            </div>
-        </footer>
+        <!-- Footer -->
+    @include('partials.footer')
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
