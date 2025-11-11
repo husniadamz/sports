@@ -34,3 +34,7 @@ Route::post('/contact', function (Request $request) {
 
     return back()->with('success', 'Thanks — your message has been received. We will get back to you soon.');
 })->name('contact.submit');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
