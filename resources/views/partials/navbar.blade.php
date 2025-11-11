@@ -22,11 +22,7 @@
                         <li class="nav-item">
                             <a href="{{ route('login') }}" class="nav-link">Login</a>
                         </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item ms-2">
-                                <a href="{{ route('register') }}" class="btn btn-sm btn-primary">Register</a>
-                            </li>
-                        @endif
+                       
                     @endauth
                 @endif
             </ul>
