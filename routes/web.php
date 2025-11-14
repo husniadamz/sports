@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,10 +37,27 @@ Route::post('/contact', function (Request $request) {
     return back()->with('success', 'Thanks — your message has been received. We will get back to you soon.');
 })->name('contact.submit');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+// Show login page (if not already exist)
+Route::get('/login', [LoginController::class, 'showLoginForm'])
+    ->name('login')
+    ->middleware('guest');
+
+// Handle login form submit
+Route::post('/login', [LoginController::class, 'login'])
+    ->name('login.perform')
+    ->middleware('guest');
+
+// Logout
+Route::post('/logout', [LoginController::class, 'logout'])
+    ->name('logout')
+    ->middleware('auth');
 
 Route::get('/register', function () {
     return view('register');
 })->name('register');
+
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+Route::get('/dashboard', function () {
+    return view('dashboard'); 
+})->middleware('auth')->name('dashboard');

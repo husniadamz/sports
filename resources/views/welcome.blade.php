@@ -90,7 +90,7 @@
                         </ul>
                         
                         <div class="d-flex gap-2">
-                            <a href="{{ route('services') }}" class="btn btn-dark btn-lg">Get Started</a>
+                            <a href="{{ route('login') }}" class="btn btn-dark btn-lg">Get Started</a>
                             <a href="{{ route('about') }}" class="btn btn-outline-dark btn-lg">Learn More</a>
                         </div>
                     </div>
