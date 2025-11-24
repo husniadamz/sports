@@ -90,7 +90,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="{{ route('welcome') }}">
-				<i class="fas fa-dumbbell text-danger"></i> SportsCentre Adam
+				<i class="fas fa-dumbbell text-danger"></i> SportsCentre
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLogin">
 				<span class="navbar-toggler-icon"></span>
